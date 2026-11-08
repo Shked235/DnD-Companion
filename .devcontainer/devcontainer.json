@@ -1,7 +1,13 @@
 {
   "name": "DnD Companion",
   "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/sshd:1": {
+      "version": "latest"
+    }
+  },
   "postCreateCommand": "npm install",
+  "postStartCommand": "bash -lc 'cd /workspaces/DnD-Companion && if ! pgrep -f \"node server/index.mjs\" >/dev/null; then npm run build >/tmp/dnd-build.log 2>&1 && nohup npm start >/tmp/dnd.log 2>&1 & fi'",
   "forwardPorts": [5173, 8787],
   "portsAttributes": {
     "5173": {
