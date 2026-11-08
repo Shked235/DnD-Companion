@@ -11,6 +11,7 @@
     "build": "tsc --noEmit && vite build",
     "start": "node server/index.mjs",
     "codespace": "npm run build && npm start",
+    "codespace:public": "node scripts/codespace-public.mjs",
     "test": "vitest run",
     "test:watch": "vitest",
     "smoke": "node scripts/smoke.mjs",

@@ -1,5 +1,7 @@
 # DnD Companion
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/Shked235/DnD-Companion)
+
 Веб-приложение для Dungeons & Dragons 5e (правила 2024), объединяющее три вещи:
 
 1. **Лист персонажа** — конструктор и рабочий лист с автоматическими расчётами.
@@ -45,6 +47,7 @@ npm start        # http://localhost:8787
 2. В терминале: `npm run dev`. Затем **Ports → 5173 → Port Visibility → Public** и открыть
    `https://<имя>-5173.app.github.dev`.
 3. Для игры без HMR: `npm run codespace` (сборка + сервер), **Ports → 8787 → Public**.
+   Открыть порты можно и командой `npm run codespace:public` (использует `gh` или `GITHUB_TOKEN`).
 
 Подробная инструкция — [docs/codespaces.md](docs/codespaces.md). Бесплатный тариф GitHub Free
 даёт **120 core-hours** (около 60 часов на 2 ядрах) и **15 GB-month**; Codespace засыпает
