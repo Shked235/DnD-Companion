@@ -1,0 +1,7 @@
+node_modules/
+dist/
+server/data/rooms.json
+.npm-install.log
+.zwork/
+*.local
+.DS_Store

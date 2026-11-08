@@ -1,0 +1,338 @@
+/* ==========================================================================
+   Светлая тема: переопределения поверх app.css
+   ========================================================================== */
+
+[data-theme='light'] .sidebar {
+  background: linear-gradient(180deg, #e2d2b4, #f4ecdb 58%);
+  border-right-color: #a68a64;
+}
+[data-theme='light'] .brand {
+  border-bottom-color: rgba(127, 79, 36, 0.24);
+}
+[data-theme='light'] .brand-name {
+  color: #2b1509;
+}
+[data-theme='light'] .brand-sub {
+  color: #7f4f24;
+}
+[data-theme='light'] .nav a {
+  color: #5c3a1e;
+}
+[data-theme='light'] .nav a:hover {
+  background: rgba(127, 79, 36, 0.08);
+  color: #2b1509;
+}
+[data-theme='light'] .nav a.active {
+  background: linear-gradient(90deg, rgba(127, 79, 36, 0.18), rgba(127, 79, 36, 0.04));
+  border-color: #a68a64;
+  color: #2b1509;
+}
+[data-theme='light'] .nav a.active svg {
+  color: #7f4f24;
+}
+[data-theme='light'] .sidebar-foot {
+  color: #7f5b38;
+  border-top-color: rgba(127, 79, 36, 0.2);
+}
+[data-theme='light'] .topbar {
+  background: rgba(244, 236, 219, 0.92);
+  border-bottom-color: #c2a987;
+}
+[data-theme='light'] .crumb {
+  color: #7f5b38;
+}
+[data-theme='light'] .user-chip {
+  background: #fbf7ec;
+  border-color: #c2a987;
+  color: #3a1d0c;
+}
+[data-theme='light'] .avatar {
+  color: #fdf6e8;
+}
+
+[data-theme='light'] .card {
+  background: #fbf7ec;
+  border-color: #c2a987;
+}
+[data-theme='light'] .card-head {
+  background: rgba(166, 138, 100, 0.14);
+  border-bottom-color: #d6c4a4;
+}
+[data-theme='light'] .panel {
+  background: #f6efe2;
+  border-color: #d6c4a4;
+}
+[data-theme='light'] .panel-brown {
+  background: linear-gradient(180deg, #f0e3cd, #f9f3e6);
+  border-color: #c2a987;
+}
+
+[data-theme='light'] .field > label,
+[data-theme='light'] .label {
+  color: #7f5b38;
+}
+[data-theme='light'] .input,
+[data-theme='light'] .select,
+[data-theme='light'] .textarea {
+  background: #fffdf7;
+  border-color: #c2a987;
+  color: #2b1509;
+}
+[data-theme='light'] .input::placeholder,
+[data-theme='light'] .textarea::placeholder {
+  color: #9b7d5c;
+}
+[data-theme='light'] .hint,
+[data-theme='light'] .muted,
+[data-theme='light'] small {
+  color: #6b4a2a;
+}
+[data-theme='light'] .dim,
+[data-theme='light'] .tiny {
+  color: #7f5b38;
+}
+
+[data-theme='light'] .btn-ghost {
+  --btn-fg: #5c3a1e;
+  --btn-bd: #c2a987;
+}
+[data-theme='light'] .btn-ghost:hover {
+  --btn-fg: #2b1509;
+  background: rgba(127, 79, 36, 0.08);
+}
+[data-theme='light'] .btn-primary {
+  --btn-bg: linear-gradient(180deg, #936639, #7f4f24);
+  --btn-fg: #fdf6e8;
+  --btn-bd: #6a3a17;
+}
+[data-theme='light'] .tabs {
+  background: rgba(166, 138, 100, 0.14);
+  border-color: #c2a987;
+}
+[data-theme='light'] .tabs button {
+  color: #5c3a1e;
+}
+[data-theme='light'] .tabs button.active {
+  color: #fdf6e8;
+  background: linear-gradient(180deg, #936639, #7f4f24);
+}
+[data-theme='light'] .chip {
+  background: #f6efe2;
+  border-color: #c2a987;
+  color: #5c3a1e;
+}
+[data-theme='light'] .chip-accent {
+  background: rgba(127, 79, 36, 0.12);
+  color: #582f0e;
+}
+[data-theme='light'] .badge {
+  background: #f6efe2;
+  color: #5c3a1e;
+}
+[data-theme='light'] .table th {
+  background: rgba(166, 138, 100, 0.16);
+  color: #7f5b38;
+}
+[data-theme='light'] .table td {
+  border-bottom-color: #e0d0b4;
+}
+[data-theme='light'] .table tbody tr:hover td {
+  background: rgba(166, 138, 100, 0.1);
+}
+[data-theme='light'] .empty {
+  background: rgba(166, 138, 100, 0.08);
+  border-color: #c2a987;
+}
+
+[data-theme='light'] .hero {
+  background:
+    radial-gradient(900px 320px at 88% -20%, rgba(166, 138, 100, 0.4), transparent 60%),
+    linear-gradient(120deg, #e7d6b7, #f9f2e3 45%, #e0cdaa 100%);
+  border-color: #a68a64;
+}
+[data-theme='light'] .hero h1 {
+  color: #2b1509;
+}
+[data-theme='light'] .hero p {
+  color: #4a2a12;
+}
+[data-theme='light'] .hero .eyebrow {
+  color: #7f4f24;
+}
+[data-theme='light'] .feature-card {
+  background: linear-gradient(180deg, #f8f1e2, #f1e6d2);
+  border-color: #c2a987;
+}
+[data-theme='light'] .feature-card:hover {
+  background: linear-gradient(180deg, #f3e8d4, #ecdfc7);
+  border-color: #936639;
+}
+[data-theme='light'] .feature-card .ico {
+  background: rgba(127, 79, 36, 0.1);
+  border-color: #c2a987;
+  color: #7f4f24;
+}
+[data-theme='light'] .stat-tile,
+[data-theme='light'] .vital,
+[data-theme='light'] .hp-block {
+  background: #f6efe2;
+  border-color: #d6c4a4;
+}
+[data-theme='light'] .char-card,
+[data-theme='light'] .entry-card {
+  background: linear-gradient(180deg, #f8f1e2, #f2e8d5);
+  border-color: #c2a987;
+}
+[data-theme='light'] .char-card .name,
+[data-theme='light'] .entry-card .t {
+  color: #2b1509;
+}
+[data-theme='light'] .entry-card .d,
+[data-theme='light'] .entry-card .t .en {
+  color: #5c3a1e;
+}
+
+[data-theme='light'] .sheet-band {
+  background:
+    radial-gradient(600px 200px at 90% -40%, rgba(166, 138, 100, 0.35), transparent 70%),
+    linear-gradient(110deg, #efe0c4, #faf3e5 75%);
+  border-color: #a68a64;
+}
+[data-theme='light'] .sheet-band .meta {
+  color: #5c3a1e;
+}
+[data-theme='light'] .ability-box {
+  background: linear-gradient(180deg, #f6ecda, #fbf7ec);
+  border-color: #c2a987;
+}
+[data-theme='light'] .ability-box .abbr {
+  color: #7f4f24;
+}
+[data-theme='light'] .ability-box .mod {
+  background: rgba(127, 79, 36, 0.12);
+  border-color: #c2a987;
+}
+[data-theme='light'] .hp-numbers {
+  color: #2b1509;
+}
+[data-theme='light'] .coin {
+  background: #f6efe2;
+}
+[data-theme='light'] .coin input {
+  color: #2b1509;
+}
+[data-theme='light'] .skill-row .val {
+  color: #3a1d0c;
+}
+[data-theme='light'] .feature-block h4 {
+  color: #2b1509;
+}
+
+[data-theme='light'] .modal {
+  background: linear-gradient(180deg, #f5ead6, #fbf7ec 40%);
+  border-color: #a68a64;
+}
+[data-theme='light'] .modal-head {
+  background: #f4e9d6;
+  border-bottom-color: #c2a987;
+}
+[data-theme='light'] .modal-foot {
+  background: rgba(166, 138, 100, 0.12);
+  border-top-color: #c2a987;
+}
+[data-theme='light'] .toast {
+  background: #f8f2e4;
+  color: #2b1509;
+  border-color: #a68a64;
+}
+[data-theme='light'] .searchbar {
+  background: #fffdf7;
+  border-color: #c2a987;
+}
+[data-theme='light'] .searchbar input {
+  color: #2b1509;
+}
+[data-theme='light'] .ref-nav {
+  background: #f6efe2;
+  border-color: #d6c4a4;
+}
+[data-theme='light'] .ref-nav button:hover {
+  background: rgba(127, 79, 36, 0.08);
+}
+[data-theme='light'] .ref-nav button.active {
+  background: rgba(127, 79, 36, 0.14);
+}
+[data-theme='light'] .stat-line {
+  border-bottom-color: #e0d0b4;
+}
+[data-theme='light'] .prose {
+  color: #3a1d0c;
+}
+
+[data-theme='light'] .room-center {
+  background: #e9dcc2;
+}
+[data-theme='light'] .room-head {
+  background: rgba(244, 236, 219, 0.9);
+}
+[data-theme='light'] .room-toolbar {
+  background: rgba(250, 244, 231, 0.95);
+  border-color: #c2a987;
+}
+[data-theme='light'] .room-col {
+  border-color: #d6c4a4;
+}
+[data-theme='light'] .map-viewport {
+  background: #e9dcc2;
+}
+[data-theme='light'] .map-stage {
+  box-shadow: 0 0 0 1px #c2a987, 0 18px 40px rgba(88, 47, 14, 0.28);
+}
+[data-theme='light'] .msg .body {
+  color: #3a1d0c;
+}
+[data-theme='light'] .msg.roll .body {
+  background: #f3e8d4;
+  border-color: #c2a987;
+  color: #3a1d0c;
+}
+[data-theme='light'] .msg.roll .total {
+  color: #7f4f24;
+}
+[data-theme='light'] .chat-form {
+  background: rgba(244, 236, 219, 0.9);
+}
+[data-theme='light'] .dice-pad button {
+  background: #f8f1e2;
+  border-color: #c2a987;
+  color: #3a1d0c;
+}
+[data-theme='light'] .init-row {
+  background: #f6efe2;
+  border-color: #d6c4a4;
+}
+[data-theme='light'] .handout {
+  background: #f6efe2;
+  border-color: #d6c4a4;
+}
+[data-theme='light'] .party-item:hover {
+  background: rgba(127, 79, 36, 0.07);
+}
+[data-theme='light'] .roll-pop {
+  background: rgba(250, 244, 231, 0.97);
+  border-color: #a68a64;
+}
+[data-theme='light'] .roll-pop .total {
+  color: #2b1509;
+}
+[data-theme='light'] .roll-pop.crit .total {
+  color: #8a5a00;
+}
+[data-theme='light'] .roll-pop.fail .total {
+  color: #8f2f1d;
+}
+
+[data-theme='light'] a.btn,
+[data-theme='light'] button.btn {
+  color: var(--btn-fg);
+}

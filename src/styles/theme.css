@@ -1,0 +1,360 @@
+/* ==========================================================================
+   DnD Companion — дизайн-токены
+   Палитра: 582F0E · 7F4F24 · 936639 · A68A64
+   Тёмная тема: глубокий коричневый фон, панели 582F0E, приподнятые слои
+   7F4F24, акцент 936639, текст и иконки A68A64. Оттенки для текста и границ
+   получены осветлением/затемнением этих четырёх цветов.
+   ========================================================================== */
+
+:root {
+  /* --- базовая палитра --- */
+  --c-582f0e: #582f0e;
+  --c-7f4f24: #7f4f24;
+  --c-936639: #936639;
+  --c-a68a64: #a68a64;
+
+  /* --- производные слои --- */
+  --bg-app: #2b1509;
+  --bg-deep: #241006;
+  --bg-panel: #3a1d0c;
+  --bg-card: #452310;
+  --bg-raised: #5a3016;
+  --bg-brown: #582f0e;
+  --bg-brown-soft: #6a3a17;
+
+  /* --- границы --- */
+  --border: #7f4f24;
+  --border-soft: #63371a;
+  --border-strong: #936639;
+  --border-accent: #a68a64;
+
+  /* --- текст --- */
+  --text: #ecdcc4;
+  --text-soft: #d4bda0;
+  --text-dim: #b99a78;
+  --text-link: #f1dab6;
+  --text-on-accent: #2b1509;
+  --text-strong: #f3e5c9;
+  --text-bright: #fff6dc;
+  --danger-text: #e3ab95;
+
+  /* --- акценты --- */
+  --accent: #a68a64;
+  --accent-strong: #936639;
+  --accent-soft: rgba(166, 138, 100, 0.14);
+  --accent-glow: rgba(166, 138, 100, 0.34);
+
+  /* --- состояния (тёплые, вне основной четвёрки) --- */
+  --success: #cfae76;
+  --success-soft: rgba(207, 174, 118, 0.16);
+  --warning: #d9a05a;
+  --warning-soft: rgba(217, 160, 90, 0.16);
+  --danger: #b0553a;
+  --danger-soft: rgba(176, 85, 58, 0.18);
+  --info: #a68a64;
+
+  /* --- типографика --- */
+  --font-display: 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', Palatino, Georgia, serif;
+  --font-ui: 'Segoe UI', Inter, system-ui, -apple-system, Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'Cascadia Mono', Consolas, 'SF Mono', 'IBM Plex Mono', monospace;
+
+  /* --- форма --- */
+  --radius-sm: 4px;
+  --radius: 8px;
+  --radius-lg: 14px;
+  --shadow-1: 0 1px 0 rgba(255, 236, 210, 0.04) inset, 0 2px 8px rgba(0, 0, 0, 0.32);
+  --shadow-2: 0 18px 40px rgba(0, 0, 0, 0.45);
+  --ring: 0 0 0 2px var(--bg-app), 0 0 0 4px var(--accent-glow);
+
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-app);
+  background-image:
+    radial-gradient(1200px 600px at 12% -10%, rgba(166, 138, 100, 0.12), transparent 60%),
+    radial-gradient(900px 520px at 100% 0%, rgba(127, 79, 36, 0.28), transparent 58%),
+    radial-gradient(800px 600px at 50% 120%, rgba(88, 47, 14, 0.5), transparent 65%),
+    repeating-linear-gradient(
+      135deg,
+      rgba(255, 236, 210, 0.014) 0px,
+      rgba(255, 236, 210, 0.014) 1px,
+      transparent 1px,
+      transparent 7px
+    );
+  background-attachment: fixed;
+  color: var(--text);
+  font-family: var(--font-ui);
+  font-size: 15px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--text);
+  margin: 0 0 0.4em;
+  letter-spacing: 0.01em;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 1.2;
+}
+h2 {
+  font-size: 23px;
+  line-height: 1.25;
+}
+h3 {
+  font-size: 18px;
+}
+h4 {
+  font-size: 15px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-soft);
+}
+
+p {
+  margin: 0 0 0.8em;
+}
+
+a {
+  color: var(--text-link);
+  text-decoration-color: rgba(166, 138, 100, 0.5);
+  text-underline-offset: 3px;
+}
+a:hover {
+  color: #ffe9c6;
+  text-decoration-color: currentColor;
+}
+
+ul,
+ol {
+  margin: 0 0 0.8em;
+  padding-left: 1.25em;
+}
+li {
+  margin-bottom: 0.25em;
+}
+
+strong {
+  color: #f7e9d1;
+  font-weight: 600;
+}
+
+small {
+  font-size: 12.5px;
+  color: var(--text-soft);
+}
+
+code,
+kbd,
+.mono {
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+}
+
+code {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--border-soft);
+  border-radius: 3px;
+  padding: 0.05em 0.35em;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--border-soft);
+  margin: 18px 0;
+}
+
+::selection {
+  background: rgba(166, 138, 100, 0.38);
+  color: #fff4e2;
+}
+
+:focus-visible {
+  outline: none;
+  box-shadow: var(--ring);
+  border-radius: var(--radius-sm);
+}
+
+/* тонкий скроллбар в духе темы */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--c-7f4f24) transparent;
+}
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+*::-webkit-scrollbar-thumb {
+  background: var(--c-7f4f24);
+  border-radius: 999px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--c-936639);
+  background-clip: padding-box;
+}
+
+/* --- служебные классы --- */
+.muted {
+  color: var(--text-soft);
+}
+.dim {
+  color: var(--text-dim);
+}
+.tiny {
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+.serif {
+  font-family: var(--font-display);
+}
+.center {
+  text-align: center;
+}
+.row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.row-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.grow {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.nowrap {
+  white-space: nowrap;
+}
+.hidden {
+  display: none !important;
+}
+
+.ornament {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--c-936639);
+}
+.ornament::before,
+.ornament::after {
+  content: '';
+  height: 1px;
+  flex: 1;
+  background: linear-gradient(90deg, transparent, var(--border-accent), transparent);
+}
+
+/* ==========================================================================
+   Светлая тема
+   Та же четвёрка коричневых, но на бумажном фоне: 582F0E · 7F4F24 ·
+   936639 · A68A64.
+   ========================================================================== */
+[data-theme='light'] {
+  --bg-app: #efe6d0;
+  --bg-deep: #e7dcc4;
+  --bg-panel: #f6efe2;
+  --bg-card: #fbf7ec;
+  --bg-raised: #e9dcc2;
+  --bg-brown: #e3d3b4;
+  --bg-brown-soft: #dccaa8;
+
+  --border: #c2a987;
+  --border-soft: #d6c4a4;
+  --border-strong: #a68a64;
+  --border-accent: #7f4f24;
+
+  --text: #3a1d0c;
+  --text-soft: #5c3a1e;
+  --text-dim: #7f5b38;
+  --text-link: #6b3a12;
+  --text-on-accent: #fdf6e8;
+  --text-strong: #2b1509;
+  --text-bright: #1f0f05;
+  --danger-text: #8f2f1d;
+
+  --accent: #7f4f24;
+  --accent-strong: #582f0e;
+  --accent-soft: rgba(127, 79, 36, 0.12);
+  --accent-glow: rgba(88, 47, 14, 0.22);
+
+  --success: #6f7a45;
+  --success-soft: rgba(111, 122, 69, 0.14);
+  --warning: #a8702c;
+  --warning-soft: rgba(168, 112, 44, 0.14);
+  --danger: #a33a25;
+  --danger-soft: rgba(163, 58, 37, 0.14);
+
+  --shadow-1: 0 1px 0 rgba(255, 255, 255, 0.7) inset, 0 2px 8px rgba(88, 47, 14, 0.12);
+  --shadow-2: 0 18px 40px rgba(88, 47, 14, 0.22);
+  --ring: 0 0 0 2px var(--bg-app), 0 0 0 4px rgba(127, 79, 36, 0.25);
+
+  color-scheme: light;
+}
+
+[data-theme='light'] body {
+  background-color: var(--bg-app);
+  background-image:
+    radial-gradient(1100px 600px at 10% -10%, rgba(166, 138, 100, 0.25), transparent 60%),
+    radial-gradient(900px 520px at 100% 0%, rgba(127, 79, 36, 0.18), transparent 58%),
+    repeating-linear-gradient(
+      135deg,
+      rgba(88, 47, 14, 0.03) 0px,
+      rgba(88, 47, 14, 0.03) 1px,
+      transparent 1px,
+      transparent 7px
+    );
+  color: var(--text);
+}
+
+[data-theme='light'] a {
+  color: var(--text-link);
+}
+
+[data-theme='light'] a:hover {
+  color: #582f0e;
+}
+
+[data-theme='light'] code {
+  background: rgba(127, 79, 36, 0.08);
+}
+
+[data-theme='light'] ::selection {
+  background: rgba(127, 79, 36, 0.22);
+  color: #2b1509;
+}
+
