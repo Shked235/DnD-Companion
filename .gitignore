@@ -5,3 +5,4 @@ server/data/rooms.json
 .zwork/
 *.local
 .DS_Store
+*.log
