@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "DnD Companion: запустить",
+      "type": "shell",
+      "command": "bash scripts/codespace-start.sh",
+      "runOptions": {
+        "runOn": "folderOpen"
+      },
+      "presentation": {
+        "reveal": "silent",
+        "panel": "dedicated",
+        "showReuseMessage": false
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "DnD Companion: остановить",
+      "type": "shell",
+      "command": "pkill -f 'node server/index.mjs' || true",
+      "problemMatcher": []
+    }
+  ]
+}
